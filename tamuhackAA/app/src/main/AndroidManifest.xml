@@ -21,7 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".controllers.BaggageActivity"></activity>
+        <activity android:name=".controllers.BaggageActivity" />
+        <activity android:name=".flight_attendant" />
+        <activity android:name=".flightAttendant" />
+        <activity android:name=".controllers.FlightAttendantActivity" />
+        <activity android:name=".controllers.checkedIn"></activity>
     </application>
 
 </manifest>
