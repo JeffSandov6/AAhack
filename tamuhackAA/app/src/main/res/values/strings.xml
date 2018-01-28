@@ -18,6 +18,7 @@
     <string name="barcode_failure">No barcode captured</string>
     <string name="barcode_error">"Error reading barcode: %1$s"</string>
     <string name="title_activity_confirm_license_scan">ConfirmLicenseScanActivity</string>
+    <string name="title_activity_flight_attendant">flight_attendant</string>
 
 
 </resources>

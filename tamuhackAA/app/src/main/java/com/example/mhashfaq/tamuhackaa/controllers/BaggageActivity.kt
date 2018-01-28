@@ -2,6 +2,8 @@ package com.example.mhashfaq.tamuhackaa.controllers
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
+import android.view.View
 import com.example.mhashfaq.tamuhackaa.R
 
 class BaggageActivity : AppCompatActivity() {

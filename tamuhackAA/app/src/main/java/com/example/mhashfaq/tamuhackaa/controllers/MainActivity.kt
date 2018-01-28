@@ -2,8 +2,10 @@ package com.example.mhashfaq.tamuhackaa.controllers
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import com.example.mhashfaq.tamuhackaa.R
+import android.content.Intent
 
 
 class MainActivity : AppCompatActivity() {
@@ -30,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         flightAttendant.setOnClickListener {
+            startActivity(Intent(baseContext, FlightAttendantActivity::class.java))
             /*
             val hashMap = HashMap<String, String>()
             ParseCloud.callFunctionInBackground("hello", hashMap, { `object`: String?, v ->
@@ -40,8 +43,9 @@ class MainActivity : AppCompatActivity() {
             */
         }
 
-        gateAttendant.setOnClickListener {
 
+        gateAttendant.setOnClickListener {
+            startActivity(Intent(baseContext, BaggageActivity::class.java))
         }
     }
 }
