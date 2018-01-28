@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <application
         android:name=".utils.App"
         android:allowBackup="true"
@@ -24,8 +23,9 @@
         </activity>
         <activity android:name=".controllers.BaggageActivity" />
         <activity android:name=".flight_attendant" />
-        <activity android:name=".flightAttendant"></activity>
-        <activity android:name=".controllers.FlightAttendantActivity"></activity>
+        <activity android:name=".flightAttendant" />
+        <activity android:name=".controllers.FlightAttendantActivity" />
+        <activity android:name=".controllers.checkedIn"></activity>
     </application>
 
 </manifest>
