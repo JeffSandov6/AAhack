@@ -1,5 +1,6 @@
 package com.example.mhashfaq.tamuhackaa.controllers
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             */
-
+            startActivity(Intent(baseContext, BaggageActivity::class.java))
         }
 
         flightAttendant.setOnClickListener {
