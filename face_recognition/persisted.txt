@@ -1,0 +1,18 @@
+{"persistedFaceId":"cd858480-d650-4e3b-a612-2028495a5b06", testpic}
+
+
+
+Parse.Cloud.Job('userCheckIn', function(req, res) {
+        var query = new Parse.Query("customer");
+        query.equalTo("objectId", "Ntcbzif8xb");
+        query.find({ useMasterKey: true }).then(function(results){
+                for (var count = 0; count < results.length; count++) {
+                        results[count].set("checkedIn", true);
+                        results[count].save(null, { useMasterKey: true });
+                }
+        })
+        .catch(function(error) {
+                res.error("Not Found");
+        });
+        res.success("done");
+});
